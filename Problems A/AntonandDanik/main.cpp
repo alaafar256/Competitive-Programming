@@ -7,20 +7,20 @@ int main() {
     string str;
     cin >> str ;
     int counterforA = 0 ;
-    int counterforB = 0 ;
-    for (int i = 1 ; i <=number_of_games ; i++ )
+    int counterforD = 0 ;
+    for (int i = 0 ; i <number_of_games ; i++ )
     {
         if (str[i]=='A')
         {
             counterforA++ ;
         }
-        else if (str[i]=='B')
+        else if (str[i]=='D')
         {
-            counterforB++ ;
+            counterforD++ ;
         }
     }
-    if (counterforA>counterforB) { cout << "Anton" << endl ; }
-    else if (counterforB>counterforA) {cout << "Danik" << endl ; }
-    else {cout << "Friendship" << endl ;}
+    if (counterforA>counterforD) { cout << "Anton" << endl ; }
+    else if (counterforD>counterforA) {cout << "Danik" << endl ; }
+    else if (counterforD==counterforA){cout << "Friendship" << endl ;}
     return 0;
 }
